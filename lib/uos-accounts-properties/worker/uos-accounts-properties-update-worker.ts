@@ -13,7 +13,7 @@ const options: WorkerOptionsDto = {
 
 async function toExecute() {
   EosApi.initBlockchainLibraries();
-  return UosAccountsPropertiesUpdateService.updateAll();
+  return UosAccountsPropertiesUpdateService.updateAll(1000);
 }
 
 (async () => {
