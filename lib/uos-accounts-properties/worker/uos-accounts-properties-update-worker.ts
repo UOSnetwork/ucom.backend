@@ -8,12 +8,12 @@ const EosApi = require('../../eos/eosApi');
 
 const options: WorkerOptionsDto = {
   processName: 'uos-accounts-properties-update',
-  durationInSecondsToAlert: 80,
+  durationInSecondsToAlert: 300,
 };
 
 async function toExecute() {
   EosApi.initBlockchainLibraries();
-  return UosAccountsPropertiesUpdateService.updateAll();
+  return UosAccountsPropertiesUpdateService.updateAll(1000);
 }
 
 (async () => {

@@ -180,7 +180,7 @@ module.exports = {
       script: 'lib/uos-accounts-properties/worker/uos-accounts-properties-update-worker.js',
 
       watch: false,
-      cron_restart: CRON_PATTERN_EVERY_TWO_MINUTES,
+      cron_restart: CRON_PATTERN_EVERY_FIVE_MINUTES,
       env: {
         NODE_ENV,
       },
@@ -210,7 +210,7 @@ module.exports = {
       script: 'lib/blockchain-nodes/worker/update-blockchain-nodes-worker.js',
 
       watch: false,
-      cron_restart: CRON_PATTERN_EVERY_TWO_MINUTES,
+      cron_restart: CRON_PATTERN_EVERY_FIVE_MINUTES,
       env: {
         NODE_ENV,
       },

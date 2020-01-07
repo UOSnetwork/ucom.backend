@@ -6,7 +6,7 @@ import EosApi = require('../../eos/eosApi');
 
 const options: WorkerOptionsDto = {
   processName: 'update-blockchain-nodes',
-  durationInSecondsToAlert: 80,
+  durationInSecondsToAlert: 300,
 };
 
 async function toExecute() {
