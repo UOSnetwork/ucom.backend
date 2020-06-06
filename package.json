@@ -16,7 +16,7 @@
     "amqplib": "^0.5.5",
     "apollo-cache-control": "^0.8.5",
     "apollo-cache-inmemory": "^1.6.3",
-    "apollo-server-core": "^2.9.7",
+    "apollo-server-core": "^2.14.2",
     "apollo-server-express": "^2.9.7",
     "app-root-path": "^2.2.1",
     "bookshelf": "^0.15.1",
