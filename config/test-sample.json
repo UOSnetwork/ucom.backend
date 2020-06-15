@@ -9,7 +9,7 @@
     "client_id": "123456",
     "client_secret": "123456",
     "state": "random-state-string",
-    "app_name": "staging-backend.u.community",
-    "default_redirect_uri": "https://staging.u.community"
+    "app_name": "staging-backend.ucommunity.io",
+    "default_redirect_uri": "https://staging.ucommunity.io"
   }
 }

@@ -43,7 +43,7 @@ ab \
     -T "application/json" \
     -n 1000 \
     -c 10 \
-    'https://backend.u.community/graphql' > media_posts_overview_graphql_post_result_1000_10.txt
+    'https://backend.ucommunity.io/graphql' > media_posts_overview_graphql_post_result_1000_10.txt
 ```
 
 ## Helpers

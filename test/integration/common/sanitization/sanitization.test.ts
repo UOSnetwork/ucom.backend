@@ -61,7 +61,7 @@ describe('Sanitization', () => {
       const fieldsToChange = {
         // tslint:disable-next-line
         description: '<div><script>alert("xss");<></script><strike>this is strike</strike><i>extra_text</i><div><a href="https://example.com">test href</a><p>1000 UOS tokens as is.</p><p></p><script>alert(\'123\')</script>2</p><div><figure>\n' +
-          '    <img alt="hello" src="https://backend.u.community/upload/post-image-1537444720877.jpg" />\n' +
+          '    <img alt="hello" src="https://backend.ucommunity.io/upload/post-image-1537444720877.jpg" />\n' +
           '        \n' +
           '</figure></div><p> </p><p></p><div>\n' +
           '    <ul>\n' +
@@ -72,7 +72,7 @@ describe('Sanitization', () => {
       };
 
       const expected = '<div><strike>this is strike</strike><i>extra_text</i><div><a href="https://example.com">test href</a><p>1000 UOS tokens as is.</p><p></p>2<p></p><div><figure>\n' +
-        '    <img alt="hello" src="https://backend.u.community/upload/post-image-1537444720877.jpg" />\n' +
+        '    <img alt="hello" src="https://backend.ucommunity.io/upload/post-image-1537444720877.jpg" />\n' +
         '        \n' +
         '</figure></div><p> </p><p></p><div>\n' +
         '    <ul>\n' +
@@ -84,9 +84,9 @@ describe('Sanitization', () => {
       const req = request(server)
         .patch(RequestHelper.getOnePostUrl(postId))
         .set('Authorization', `Bearer ${userVlad.token}`)
-        .field('description',   fieldsToChange.description)
-        .field('entity_images',   '{}')
-      ;
+        .field('description', fieldsToChange.description)
+        .field('entity_images', '{}')
+        ;
 
       RequestHelper.addFakeSignedTransactionString(req);
 
@@ -106,7 +106,7 @@ describe('Sanitization', () => {
 
       // noinspection HtmlDeprecatedAttribute
       const fieldsToChange = {
-        description :
+        description:
           `<div class="medium-insert-embeds">
  <figure>
   <div class="medium-insert-embed">
@@ -120,9 +120,9 @@ describe('Sanitization', () => {
       const req = request(server)
         .patch(RequestHelper.getOnePostUrl(postId))
         .set('Authorization', `Bearer ${userVlad.token}`)
-        .field('description',   fieldsToChange.description)
-        .field('entity_images',   '{}')
-      ;
+        .field('description', fieldsToChange.description)
+        .field('entity_images', '{}')
+        ;
 
       RequestHelper.addFakeSignedTransactionString(req);
 
@@ -149,11 +149,11 @@ describe('Sanitization', () => {
       const req = request(server)
         .patch(RequestHelper.getOnePostUrl(postId))
         .set('Authorization', `Bearer ${userVlad.token}`)
-        .field('title',         fieldsToChange.title)
-        .field('description',   fieldsToChange.description)
-        .field('leading_text',  fieldsToChange.leading_text)
-        .field('entity_images',  '{}')
-      ;
+        .field('title', fieldsToChange.title)
+        .field('description', fieldsToChange.description)
+        .field('leading_text', fieldsToChange.leading_text)
+        .field('entity_images', '{}')
+        ;
 
       RequestHelper.addFakeSignedTransactionString(req);
 
@@ -172,4 +172,4 @@ describe('Sanitization', () => {
   });
 });
 
-export {};
+export { };

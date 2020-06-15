@@ -23,7 +23,7 @@ Notes:
 ### Blockchain nodes monitoring:
 * Server itself. Basic Zabbix metrics - CPU, RAM, Disk, etc.
 * Node itself. A get_info HTTP response status must be 200. 
-Example request: https://mini-mongo.u.community:7889/v1/chain/get_info
+Example request: https://mini-mongo.ucommunity.io:7889/v1/chain/get_info
 * Last block delay. `head_block_time` delay should be no more than 10 minutes.
 * A load balancer (NGINX) monitoring.
 

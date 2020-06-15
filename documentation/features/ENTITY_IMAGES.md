@@ -29,23 +29,23 @@ It is not required to validate it somehow.
 {
    "article_title": [
       {
-         "url":"https://backend.u.community/upload/main_image_filename-1545901400947.jpg",
+         "url":"https://backend.ucommunity.io/upload/main_image_filename-1545901400947.jpg",
          "type": "original",
       },
       {
-         "url":"https://backend.u.community/upload/main_image_filename-123dadsada.jpg",
+         "url":"https://backend.ucommunity.io/upload/main_image_filename-123dadsada.jpg",
          "type": "resize",
          "size": '800x800',
       },
    ],
    "main_slider_gallery": [
       'slider_1': {
-         "url":"https://backend.u.community/upload/main_image_filename-1545901400947.jpg",
+         "url":"https://backend.ucommunity.io/upload/main_image_filename-1545901400947.jpg",
          "type": "original",
          "position": 1,
       },
       {
-         "url":"https://backend.u.community/upload/main_image_filename-1545901400947.jpg"
+         "url":"https://backend.ucommunity.io/upload/main_image_filename-1545901400947.jpg"
          "type": "original"
          "position": 1,
       },

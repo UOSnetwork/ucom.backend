@@ -22,7 +22,7 @@ class GithubRequest {
   public static async sendSampleGithubCallback(code: string) {
     const url = this.getBackendCallbackUrl();
 
-    const redirectLocation = 'https://staging.u.community/';
+    const redirectLocation = 'https://staging.ucommunity.io/';
 
     const qs = `?redirect_uri=${redirectLocation}&code=${code}&state=${githubConfig.state}`;
 

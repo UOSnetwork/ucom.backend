@@ -53,7 +53,7 @@ const options = {
         colorize: true,
     },
     sentry: {
-        dsn: 'http://32db371651644b0da6d582d2c71d05c3@sentry.u.community/1',
+        dsn: 'http://32db371651644b0da6d582d2c71d05c3@sentry.ucommunity.io/1',
         level: 'error',
     },
 };

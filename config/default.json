@@ -21,10 +21,10 @@
     "client": "pg",
     "debug": false,
     "connection": {
-      "host" : "uos-backend-postgres-test.dev",
-      "user" : "uos",
-      "password" : "uos",
-      "database" : "uos_backend_events"
+      "host": "uos-backend-postgres-test.dev",
+      "user": "uos",
+      "password": "uos",
+      "database": "uos_backend_events"
     },
     "migrations": {
       "tableName": "migrations_knex",
@@ -35,10 +35,10 @@
     "client": "pg",
     "debug": false,
     "connection": {
-      "host" : "uos-backend-postgres-test.dev",
-      "user" : "uos",
-      "password" : "uos",
-      "database" : "uos_backend_app"
+      "host": "uos-backend-postgres-test.dev",
+      "user": "uos",
+      "password": "uos",
+      "database": "uos_backend_app"
     },
     "migrations": {
       "tableName": "migrations_knex",
@@ -75,7 +75,7 @@
     "creatorAccountName": "12345",
     "creatorPrivateKey": "12345"
   },
-    "ipfs": {
+  "ipfs": {
     "host": "85.10.211.115",
     "port": "5001",
     "api-path": "/api/v0/"
@@ -92,8 +92,8 @@
     "allowed_origins": [
       "http://localhost:8080",
       "http://localhost",
-      "https://staging.u.community",
-      "https://u.community",
+      "https://staging.ucommunity.io",
+      "https://ucommunity.io",
       "https://u.today"
     ]
   }

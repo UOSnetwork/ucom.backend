@@ -13,10 +13,10 @@ const {
 const MAX_FILE_SIZE = 104857600; // 100 MB;
 const MAX_FILES = 30;
 
-const LOGGER__API               = 'api';
-const LOGGER_CONSUMER           = 'consumer';
-const LOGGER_WORKER             = 'worker';
-const LOGGER_AUTH_CALLBACK      = 'auth-callback';
+const LOGGER__API = 'api';
+const LOGGER_CONSUMER = 'consumer';
+const LOGGER_WORKER = 'worker';
+const LOGGER_AUTH_CALLBACK = 'auth-callback';
 
 const LOGGERS_ALL: string[] = [
   LOGGER__API,
@@ -63,7 +63,7 @@ const options = {
     colorize: true,
   },
   sentry: {
-    dsn: 'http://32db371651644b0da6d582d2c71d05c3@sentry.u.community/1',
+    dsn: 'http://32db371651644b0da6d582d2c71d05c3@sentry.ucommunity.io/1',
     level: 'error',
   },
 };
@@ -109,10 +109,10 @@ const ApiLoggerStream = {
   },
 };
 
-const ApiLogger           = winston.loggers.get(LOGGER__API);
-const ConsumerLogger      = winston.loggers.get(LOGGER_CONSUMER);
-const WorkerLogger        = winston.loggers.get(LOGGER_WORKER);
-const AuthCallbackLogger  = winston.loggers.get(LOGGER_AUTH_CALLBACK);
+const ApiLogger = winston.loggers.get(LOGGER__API);
+const ConsumerLogger = winston.loggers.get(LOGGER_CONSUMER);
+const WorkerLogger = winston.loggers.get(LOGGER_WORKER);
+const AuthCallbackLogger = winston.loggers.get(LOGGER_AUTH_CALLBACK);
 
 export {
   ApiLogger,

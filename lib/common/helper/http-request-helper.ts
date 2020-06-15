@@ -4,7 +4,7 @@ const config = require('config');
 
 class HttpRequestHelper {
   public static getUCommunityCookieDomain(): string {
-    return 'u.community';
+    return 'ucommunity.io';
   }
 
   public static getCookieDomain(request): string {

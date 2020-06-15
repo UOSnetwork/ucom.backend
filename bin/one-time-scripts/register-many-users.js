@@ -21,7 +21,7 @@
 //   if (EnvHelper.isTestEnv()) {
 //     host = 'http://173.18.212.40:3000';
 //   } else if (EnvHelper.isStagingEnv()) {
-//     host = 'https://staging-backend.u.community';
+//     host = 'https://staging-backend.ucommunity.io';
 //   } else {
 //     throw new AppError(`Unsupported env: ${EnvHelper.getNodeEnv()}`, 500);
 //   }
